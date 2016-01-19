@@ -1,0 +1,30 @@
+{
+  "name": "good-kinesis",
+  "version": "0.0.5",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CascadeEnergy/good-kinesis.git"
+  },
+  "author": {
+    "name": "CascadeEnergy",
+    "email": "chris.cortez@cascadeenergy.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "hapi",
+    "good",
+    "kinesis",
+    "aws"
+  ],
+  "bugs": {
+    "url": "https://github.com/cascadeenergy/good-kinesis/issues"
+  },
+  "homepage": "https://github.com/cascadeenergy/good-kinesis",
+  "dependencies": {
+    "aws-promised": "^2.9.0",
+    "dispatch-fn": "^1.0.0",
+    "good-squeeze": "^2.1.0",
+    "lodash": "^4.0.0"
+  }
+}
