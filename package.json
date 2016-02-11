@@ -25,6 +25,7 @@
     "aws-promised": "^2.9.0",
     "dispatch-fn": "^1.0.0",
     "good-squeeze": "^2.1.0",
-    "lodash": "^4.0.0"
+    "lodash": "^4.3.0",
+    "moment": "^2.11.2"
   }
 }
