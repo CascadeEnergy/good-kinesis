@@ -1,10 +1,10 @@
 'use strict';
 
-const assign = require('lodash/object/assign');
+const assign = require('lodash/assign');
 const AWS = require('aws-promised');
-const identity = require('lodash/utility/identity');
+const identity = require('lodash/identity');
 const os = require('os');
-const pick = require('lodash/object/pick');
+const pick = require('lodash/pick');
 const Squeeze = require('good-squeeze').Squeeze;
 
 function GoodKinesis(events, config) {

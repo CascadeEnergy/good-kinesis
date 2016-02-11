@@ -1,8 +1,8 @@
 'use strict';
 
-const assign = require('lodash/object/assign');
+const assign = require('lodash/assign');
 const dispatch = require('dispatch-fn');
-const identity = require('lodash/utility/identity');
+const identity = require('lodash/identity');
 const moment = require('moment');
 
 function formatError(error) {
