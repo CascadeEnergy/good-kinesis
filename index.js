@@ -46,11 +46,17 @@ GoodKinesis.prototype.init = function(readstream, emitter, callback) {
       function done() {
         squeeze.removeListener('data', update);
 
-        send(assign(self.defaults, {processId: processId, state: 'done'}));
+        send(assign(self.defaults, {processId: processId, state: 'done'}))
+          .then(() => {
+            process.exit(0);
+          })
+          .catch(err => {
+            process.exit(1);
+          });
       }
 
       function send(data) {
-        kinesisClient.putRecordPromised(
+        return kinesisClient.putRecordPromised(
           {
             StreamName: self.streamName,
             PartitionKey: processId,
